@@ -7,6 +7,8 @@ cd $basedir
 outDebugInfo
 
 install_deps cockroach
+CockURL="/var/cache/yum/aarch64/7/Estuary/packages/"$(ls /var/cache/yum/aarch64/7/Estuary/packages/ | grep cockroach)
+yum localinstall -y $CockURL
 
 if [ `which cockroach`  ] ;then
 #    lava-test-case "cockroach_install " --result pass
