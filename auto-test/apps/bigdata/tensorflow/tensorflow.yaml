@@ -8,13 +8,13 @@ metadata:
         - liu_caili@hoperun.com
     scope:
         - bigdata
-        - tensorflow
+        - mishuai 
     os:
         - centos
     devices:
         - d03
         - d05
-    level: 5
+    level: 1
     totalcase:
         centos: 13
         ubuntu: 16
