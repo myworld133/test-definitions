@@ -29,8 +29,6 @@ case $distro in
 #    Check_Repo "${pkgs}" "Estuary"
 #    print_info $? check-repo
     install_deps "${pkgs}"
-	TensorflowURL="/var/cache/yum/aarch64/7/Estuary/packages/"$(ls /var/cache/yum/aarch64/7/Estuary/packages/ | grep tensorflow)
-	yum localinstall -y $TensorflowURL
     print_info $? install-tensorflow
     ;;
     "ubuntu"|"debian")
